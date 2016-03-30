@@ -3,38 +3,39 @@
 
 Released under the MIT and GPL (version 2 or later) Licenses.
 
-Note, this is a total mess of inconsistent css, html, javascript and content. 
+Note, this is a total mess of inconsistent css, html, javascript and content.
 It's probably a good example of how difficult it is for me to separate content with presentation in practice.
 -->
 
 <html lang="en">
 <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=1024" />
-    <meta name="apple-mobile-web-app-capable" content="yes" />
-    <title> </title>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=1024" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<title> </title>
 
-    <meta name="description" content="" />
-    <meta name="author" content="" />
+<meta name="description" content="" />
+<meta name="author" content="" />
 
-    <link rel="stylesheet" type="text/css" href="css/reset.css" />
+<link rel="stylesheet" type="text/css" href="css/reset.css" />
 
-    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Tangerine">
+<link rel="stylesheet" type="text/css"
+href="http://fonts.googleapis.com/css?family=Source+Sans+Pro">
 
-    <link rel="stylesheet" href="lib/fontawesome/css/font-awesome.min.css">
-    <!-- <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet"> -->
-    <!-- basic setup -->
-    <!-- <link rel="stylesheet" type="text/css" href="css/base.css" /> -->
-    <!-- menus and buttons -->
-    <link rel="stylesheet" type="text/css" href="css/navmenu.css" />
+<link rel="stylesheet" href="lib/fontawesome/css/font-awesome.min.css">
+<!-- <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet"> -->
+<!-- basic setup -->
+<!-- <link rel="stylesheet" type="text/css" href="css/base.css" /> -->
+<!-- menus and buttons -->
+<link rel="stylesheet" type="text/css" href="css/navmenu.css" />
 
-    <!-- presentation-specific styling, which might be done with less instead of css -->
-    <link rel="stylesheet" type="text/css" href="css/style.css" />
-    <!-- <link rel="stylesheet/less" type="text/css" href="less/style.less"> -->
+<!-- presentation-specific styling, which might be done with less instead of css -->
+<link rel="stylesheet" type="text/css" href="css/style.css" />
+<!-- <link rel="stylesheet/less" type="text/css" href="less/style.less"> -->
 
 
-    <link rel="shortcut icon" href="img/favicon.png" />
-    <link rel="apple-touch-icon" href="img/apple-touch-icon.png" />
+<link rel="shortcut icon" href="img/favicon.png" />
+<link rel="apple-touch-icon" href="img/apple-touch-icon.png" />
 </head>
 
 <body class="impress-not-supported">
@@ -48,32 +49,138 @@ It's probably a good example of how difficult it is for me to separate content w
 </div>
 
 <div id="impress">
-    
+
     <!-- each slide must be a div with class step,  must have some co-ordinates -->
-    <div id="title" class="step" data-x="0" data-y="0" data-z="0" data-rotate-x="0" data-rotate-y="0" data-rotate-z="0" data-scale="1">
-        <h1>Title Slide</h1> 
-        <p><i class="fa fa-twitter fa-large"></i>@twitter</p>
+    <div id="title" class="step" data-x="0" data-y="0" data-z="2500" data-rotate-x="0" data-rotate-y="0" data-rotate-z="0" data-scale="1">
+        <h1>Multilingual Standards: XLIFF Lessons</h1><br /><br />
+        <p>Alexander O&apos;Connor (ADAPT@DCU&mdash;IE)<br /><i class="fa fa-twitter fa-large"></i>@<a
+            href="https://www.twitter.com/uberalex">uberalex</a> 
+        <i class="fa fa-envelope fa-large"></i><a href="mailto:Alexander.OConnor@dcu.ie">Alexander.OConnor@dcu.ie</a>
+</p>
+    </div>
+     <div id="process" class="step" data-x="0" data-y="2500" data-z="-2500"
+        data-rotate-x="0" data-rotate-y="0" data-rotate-z="0" data-scale="1">
+        <h1><em>Get the Data Out and Get it back in again, even if it's
+                different.</em></h1>
         <div class="notes">
-            <!--speaker notes-->
-            <p>Example Speaker Notes.</p>
+            the data is always different, and it can be very different
         </div>
     </div>
-    <div id="slide1" class="step" data-x="1200" data-y="0" data-z="0" data-rotate-x="0" data-rotate-y="0" data-rotate-z="0" data-scale="1">
-        <h1>Slide one</h1> 
+
+    <div id="xliff" class="step" data-x="0" data-y="0" data-z="-3000"
+        data-rotate-x="0" data-rotate-y="0" data-rotate-z="0" data-scale="1">
+        <h1>XLIFF Modules</h1>
+        <div id="labels">
+            <span>Translation Candidates (matches, mtc:)</span>
+            <span>Format Style (fs:)</span>
+            <span>Metadata (mda:)</span>
+            <span>Resource Data (res:)</span> 
+            <span>Change Tracking (ctr:)</span>
+            <span>Size Restriction (slr:)</span>
+            <span>Validation (val:)</span>
+        </div>
+
         <div class="notes">
             <!--speaker notes-->
-            <p>Example Speaker Notes.</p>
+            <p>Numerous stakeholders (from individual to large company),
+            crossing many technical formats (Software strings, word to text and
+            back). Challenges to vendor adoption in industry. Different
+            objectives</p>
+        </div>
+    </div>
+    <div id="SRXTMX" class="step" data-x="-150" data-y="150" data-z="-2500"
+        data-rotate-x="0" data-rotate-y="0" data-rotate-z="0" data-scale="0.25">
+                <h1>TMX: Translation Memory eXchange</h1>
+                <h1>SRX: Segmentation Representation</h1>
+        <div class="notes">
+            <!--speaker notes-->
+            <p>Good examples of complimentary and duplicated features across the
+            standards. SRX allows defining sometimes-complex rules for mixing
+            bi-directional text, or handling to improve leverage. Worth noting
+            they are also very quiet standards.</p>
+        </div>
+    </div>
+    <div id="TBX" class="step" data-x="400" data-y="350" data-z="-2500"
+        data-rotate-x="0" data-rotate-y="0" data-rotate-z="0" data-scale="0.25">
+        <h1>TermBase eXchange</h1>
+        <div class="thirds"><h2>Interchange</h2></div>
+        <div class="thirds"><h2>Dissemination</h2></div>
+        <div class="thirds"><h2>Analysis</h2></div>
+        <div class="notes">
+            <!--speaker notes-->
+            <p>TBX is designed to facilitate the following use cases:
+            <ul>
+            Interchange, such as that required to support
+            <li> the flow of terminological data between technologies and systems</li>
+            <li> integration of terminological data from multiple sources</li>
+            <li> data conversion necessitated by a change in applications or technologies</li>
+            Dissemination, including
+            <ul>
+            <li> querying multiple terminological databases through a single user interface by passing data through a</li>
+            common intermediate format on a batch or dynamic basis</li>
+            <li> placing data on an online site for download by interested parties</li>
+            <li> making entries which require some work available for public feedback</li>
+            <li> making terminology available dynamically in networked applications through a Web service</li>
+        </ul>
+            Analysis and representation, including
+            <ul>
+            <li> comparing the contents of various terminological databases</li>
+            <li> studying how lossless a conversion between two terminology databases can be</li>
+            <li> designing a new terminological database intended to minimize
+            loss during conversion..</li></ul></p>
         </div>
     </div>
 
-    <div id="d3slide" class="step" data-x="0" data-y="1200" data-z="0" data-rotate-x="0" data-rotate-y="0" data-rotate-z="0" data-scale="1">
+    <div id="ITS" class="step" data-x="-150" data-y="150" data-z="-2500"
+        data-rotate-x="90" data-rotate-y="0" data-rotate-z="0" data-scale="0.25">
+        <p><em>The technology described in <a
+                href="https://www.w3.org/TR/its20/">this document</a> “Internationalization
+            Tag Set (ITS) 2.0“ enhances the foundation to integrate automated
+            processing of human language into core Web technologies.</em></p>
+        <div class="notes">
+            <!--speaker notes-->
+            <p>Includes terminology, good illustration of the breadth of use
+            cases internationalisation implies.</p>
+        </div>
+    </div>
+       <div id="LLOD" class="step" data-x="200" data-y="150" data-z="-4500"
+        data-rotate-x="0" data-rotate-y="90" data-rotate-z="0" data-scale="1">
+        <img src="../img/lemon.png" /> 
+        <div class="notes">
+            <!--speaker notes-->
+            <p>Lemon heavily used (despite being revised in ontolex). TBX and
+            Multilingual (as opp. Bilingual dicts). Best Practice guidelines
+            from W3C.</p>
+        </div>
+    </div>
+  <div id="OMOS" class="step" data-x="200" data-y="2000" data-z="-2500"
+        data-rotate-x="0" data-rotate-y="90" data-rotate-z="0" data-scale="1">
+        <h1>OASIS XLIFF Object Model and Other Serializations (<a href="https://www.oasis-open.org/committees/xliff-omos/charter.php">XLIFF
+                OMOS</a>) Technical Committee</h1>
+        <ol>
+            <li>JSON</li>
+            <li>TMX</li>
+            <li>Other Formats</li>
+        </ol>
+        <div class="notes">
+            <!--speaker notes-->
+            <p>Lemon heavily used (despite being revised in ontolex). TBX and
+            Multilingual (as opp. Bilingual dicts). Best Practice guidelines
+            from W3C.</p>
+        </div>
+    </div>  
+    <div id="Conclusions" class="step" data-x="2500" data-y="2500" data-z="-2500"
+        data-rotate-x="0" data-rotate-y="0" data-rotate-z="0" data-scale="1">
+        <div class="notes">
+            <!--speaker notes-->
+            <p>Some of these standards are ageing. LISA is gone, and there are
+            new efforts over things like AR. The idea of separating
+            transportation and processing representations and creating object or
+            serialised formats might be worth expanding on.</p>
+        </div>
     </div>
 
 
-
-    <!-- keep an overview slide, you may wish to change the scaling and / or the co-ordinates -->
-    <div id="overview" class="step" data-x="600" data-y="0" data-z="0" data-rotate-x="0" data-rotate-y="0" data-rotate-z="0" data-scale="2">
-    </div>
 
 </div>
 <!-- end of impress -->
@@ -119,7 +226,7 @@ if ("ontouchstart" in document.documentElement) {
 <!-- Initialisation -->
 <script>impress().init();</script>
 <script>var time = 1000 * 60 * 15;
-        var clock = timer(time, update);
+var clock = timer(time, update);
 </script>
 </body>
 </html>

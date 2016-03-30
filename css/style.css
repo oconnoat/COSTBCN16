@@ -4,17 +4,23 @@
  *
  *
  *
- * An example block below 
+ * An example block below
  * @font-face {
  * font-family: 'Satisfy';
  *  font-style: normal;
  *  font-weight: 400;
  *  src: local('Satisfy') url(http://themes.googleusercontent.com/static/fonts/satisfy/v4/tmRzDlQs5wZmOn9mIuLa-QLUuEpTyoUstqEm5AMlJo4.woff) format('woff'),
- *  local('Satisfy') url('Satisfy.woff') format('woff'); 
+ *  local('Satisfy') url('Satisfy.woff') format('woff');
  * }
  *
  *
  * */
+
+body {
+    color: #333;
+    background-color: #ffd;
+    font-family: 'Source Sans Pro', sans-serif; 
+}
 
 /* hint and unsupported content */
 div.fallback-message {
@@ -30,18 +36,82 @@ div.step{
     min-width: 900px;
     min-height: 700px;
     font-size: 48px;
-    border: 1px solid red;
 }
 
 /* Impress-related markup */
 .impress-enabled .step.active {
-    background-color: #fff;:
+    background-color: rgba(255,255,255,0.5);:
 }
 
 /* make the non-active steps transparent */
 .step:not(.active) { opacity: 0.33; }
 
 /* Per-slide Markup uses .impress-on-slideID */
+
+div#xliff div#labels span{
+    margin-top: 5px;
+    display: block;
+    position: relative;
+    background-color:rgba(255,255,255,0.66);
+}
+
+.impress-on-LLOD {
+    background-image: url('../img/wires.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+.impress-on-process div#process{
+    background: none;
+}
+
+.impress-on-process {
+    background-image: url('../img/jump.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.impress-on-title {
+    background-image: url('../img/hello.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.impress-on-xliff {
+    background-image: url('../img/tincan.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.impress-on-SRXTMX{
+    background-image: url('../img/books.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.impress-on-TBX{
+    background-image: url('../img/books.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.impress-on-SRXTMX div#xliff{
+    display: none;
+}
+.impress-on-ITS{
+    background-image: url('../img/signs.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.impress-on-OMOS{
+    background-image: url('../img/silo.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.impress-on-Conclusions{
+    background-image: url('../img/phone.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
 .impress-not-supported div.fallback-message{
     display: block;
     height: 100px;
@@ -54,28 +124,71 @@ div.step{
 
 }
 .impress-on-title div.hint{
-   display: block;
-   font-size: 14px;
-   font-style: italic;
-   text-align: center;
-   width: 250px;
-   position: absolute;
-   left: 50%;
-   margin-left: -125px;
+    display: block;
+    font-size: 14px;
+    font-style: italic;
+    text-align: center;
+    width: 250px;
+    position: absolute;
+    left: 50%;
+    margin-left: -125px;
 }
 .impress-on-overview div:hover{
     opacity: 1;
     background-color: #fff;
 }
 
+a {
+    color: rgba(200,200,255,1);
+}
+
 /* specific divs */
 div#title h1{
     text-align: center;
     margin: 10px;
-    font-size: 256px;
-    font-family: 'Tangerine', sans-serif;
+    line-height: 1.5em;
+    font-size: 100px;
+}
+div#process h1{
+    position: absolute;
+    top: 40%;
+    background: rgba(255,255,255,0.5);
+}
+div#LLOD img{
+    width: 100%;
+}
+div#ITS {
+ background: none;
+}
+div#ITS p{
+    margin-top: 35%;
+    text-align: justify;
+    background-color: rgba(30,30,30,1); 
+    color: rgba(255,255,255,1);
 }
 
-div#overview {
-    display: none;
+div#SRXTMX {
+    background-color: rgba(255,255,255,1);
+}
+div#SRXTMX h1{
+    margin-top: 20%;
+    text-align: center; 
+}
+div.thirds {
+    margin-top: 30%;
+    float: left;
+    width: 33%;
+    max-width: 33%;
+    background-color: #edd;
+}
+div.thirds:nth-of-type(odd) {
+    background: #ded;
+}
+ol{
+    list-style: decimal inside;
+    margin-top: 20%;
+    margin-left: 10%;
+}
+div#Conclusions{
+ background: none;
 }
